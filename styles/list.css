@@ -1,0 +1,24 @@
+.list1 {
+    list-style-image: none;
+    list-style-type: square;
+}
+
+.list {
+    border:thick double	#CA8EC2;
+    /* border-width:3px;
+    border-style:dotted;
+    border-color:#CA8EC2; */
+    border-radius: 10px 5px;
+    list-style-type: none;
+    list-style-image: url(../image/star.png);
+}
+
+.in {
+    background-color:darksalmon;
+    list-style-position:inside;
+}
+
+.out {
+    background-color:darkseagreen;
+    list-style-position:outside;
+}

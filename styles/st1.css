@@ -1,0 +1,31 @@
+h2.st1 {
+    color:orangered;
+    text-decoration:underline;
+}
+.st2 {
+    color:palevioletred;
+    font-style:italic;
+}
+
+#col3 {
+    color:cornflowerblue;
+}
+
+.col2 {
+    color:blue;
+}
+
+.col1 {
+    color:brown;
+}
+
+p {
+    color:gray;
+}
+
+.font1 {
+    font-style:italic;
+}
+.overline {
+    text-decoration:overline;
+}
