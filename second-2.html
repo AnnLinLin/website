@@ -5,7 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS的使用--自訂樣式(class)</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+        @font-face {
+            src:url(fonts/JustOldFashion.ttf);
+            font-family:font1;
+        }
+        .font1 {
+            font-family:font1;
+        }
+        @font-face {
+            src:url(fonts/SCRIPTIN.ttf);
+            font-family:font2;
+        }
+        .font2 {
+            font-family:font2;
+        }
+        .p1 {
+            font-family: 'Raleway', sans-serif;
+            font-size:3em;
+        }
         /* h2.st1 {
             color:orangered;
             text-decoration:underline;
@@ -31,11 +51,12 @@
     <link rel="stylesheet" href="styles/st1.css">
 </head>
 <body>
-    <h1 class="col1 col2">apple</h1>
-    <h1 class="st2">orange</h1>
-    <h2 class="st1">lemon</h2>
+    <h1 class="col1 col2 font1" >apple</h1>
+    <h1 class="st2 font2" >orange</h1>
+    <h2 class="st1 font2" >lemon</h2>
     <h2 class="col1 font1">melon</h2>
     <h2 class="col2 overline">berry</h2>
     <p>柯文哲：案1153感染源待釐清 北市下午宣布防疫是否升級</p>
+    <p class="p1">Almost before we knew it, we had left the ground.</p>
 </body>
 </html>
