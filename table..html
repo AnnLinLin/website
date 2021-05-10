@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>表格</title>
     <style>
         .tb1 {
             width: 400px;
@@ -13,14 +13,13 @@
             border-collapse: collapse;
         }
 
-        td,
-        th {
+        td,th {
             border: 1px solid white;
         }
 
         thead {
             background-color: #613030;
-            color: white;
+            color: white;                                                                                                                                                                                                                                                                                                                       
             text-transform: capitalize;
         }
 
@@ -28,11 +27,25 @@
             background-color: #E1C4C4;
             text-align: center;
         }
+
+        tbody tr:nth-child(2n) {
+            background-color: white;
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: #FFBD9D;
+        }
+
+        tbody tr:hover {
+            background-color: #C48888;
+            color:white
+        }
     </style>
 </head>
 
 <body>
     <table class="tb1">
+        <caption><h2>表格練習</h2></caption>
         <thead>
             <tr>
                 <th>column1</th>
@@ -43,8 +56,8 @@
             <tr>
                 <th colspan="2">column1</th>
                 <!-- <th>column2</th> -->
-                <th>column3</th>
-                <th>column4</th>
+                <th colspan="2">column3</th>
+                <!-- <th>column4</th> -->
             </tr>
         </thead>
         <tbody>
