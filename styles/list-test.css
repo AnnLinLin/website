@@ -1,0 +1,17 @@
+.list {
+    border:5px double #FFAF60;
+    border-radius:5px;
+    list-style-type:square;
+}
+.list1 {
+    list-style-type:none;
+    list-style-image:url("../image/star.png")
+}
+.in {
+    background-color: #FFBB77;
+    list-style-position: inside;
+}
+.out {
+    background-color: #FFCBB3;
+    list-style-position: outside;
+}

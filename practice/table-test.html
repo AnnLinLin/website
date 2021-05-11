@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-test</title>
+    <style>
+        .tb1 {
+            width: 500px;
+            border: 2px solid #6FB7B7;
+            border-collapse:collapse;
+        }
+        td,th {
+            border: 2px dotted white;
+        }
+        thead {
+            background-color: #336666;
+            color: #ffffff;
+        }
+
+        tbody {
+            background-color: #C4E1E1;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color:#C48888;
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: white;
+        }
+        
+        tbody tr:hover {
+            background-color:#D9006C;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tb1">
+        <caption><h2>表格練習</h2></caption>
+        <thead>
+            <tr>
+                <th>Product 1</th>
+                <th>Product 2</th>
+                <th>Product 3</th>
+                <th>Product 4</th>
+            </tr>
+            <tr>
+                <th colspan="2">Price 1</th>
+                <!-- <th>Price 2</th> -->
+                <th colspan="2">Price 3</th>
+                <!-- <th>Price 4</th> -->
+        </thead>
+        </tr>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="3">2</td>
+                <!-- <td>3</td>
+                <td>4</td> -->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="3">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
